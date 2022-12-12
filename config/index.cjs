@@ -14,13 +14,9 @@ const USER_CONFIG = {
   // 使用微信测试号时才需要填写：公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: '',
-
   // 使用微信测试号时才需要填写：公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '',
-  
   // 为了避免推送服务器误将脚本列为恶意推送脚本，可设置每分钟脚本最大推送数
   // 每分钟脚本最大推送数，超过此数将会休眠1分钟后再发送剩余消息，不填则默认为5
   // 此项不建议随意修改
@@ -70,26 +66,6 @@ const USER_CONFIG = {
     courseSchedule: false,
   },
   
-  TIAN_API: {
-    // 天行API KEY，如果使用天行API则需要填写此项
-    key: '',
-    
-    /** 天行API相关，需要config中配置 TIAN_API_KEY  */
-    // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
-    morningGreeting: false,
-  
-    // 晚安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
-    eveningGreeting: false,
-  
-    // 天行天气（展示未来N天，最多7天）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
-    weather: 0,
-  
-    // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
-    networkHot: 0,
-  
-    // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
-    networkHotType: 'default',
-  },
   
   /** 是否给文字设置多彩颜色, 和emoji不兼容 */
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -115,9 +91,9 @@ const USER_CONFIG = {
       // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
       useTemplateId: '0001',
       // 所在省份或城市，也可以不填
-      province: '兴安盟',
+      province: '内蒙古',
       // 所在城市或县区
-      city: '突泉县',
+      city: '兴安盟',
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '10-28',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -264,9 +240,9 @@ const USER_CONFIG = {
    * */
   
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '兴安盟',
+  PROVINCE: '内蒙古',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '突泉县',
+  CITY: '兴安盟',
 
   /** 重要节日相关 */
 
